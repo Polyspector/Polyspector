@@ -1,0 +1,50 @@
+.light-tips {
+  font: normal 14px '\5FAE\8F6F\96C5\9ED1';
+  color: #fff;
+  border: 5px;
+  line-height: 24px;
+  padding: 5px 10px;
+  background: rgba(0,0,0,1);
+  background: #000;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10000000;
+  display: none;
+}
+
+.light-tips-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-width: 6px;
+  border-style: solid;
+}
+
+.arrow-top {
+  top: -12px;
+  left: 50%;
+  margin-left: -6px;
+  border-color: transparent transparent #000 transparent;
+}
+
+.arrow-bottom {
+  bottom: -12px;
+  left: 50%;
+  margin-left: -6px;
+  border-color: #000 transparent transparent transparent;
+}
+
+.arrow-left {
+  left: -12px;
+  top: 50%;
+  margin-top: -6px;
+  border-color: transparent #000 transparent transparent;
+}
+
+.arrow-right {
+  right: -12px;
+  top: 50%;
+  margin-top: -6px;
+  border-color: transparent transparent transparent #000;
+}

@@ -1,0 +1,771 @@
+@charset "utf-8";
+body {
+  margin: 0; /* 余白の削除 */
+  padding: 0; /* 余白の削除 */
+  width: 100%;
+  height: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 29px;
+  background: #333;
+}
+section {
+  position: absolute;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 29px;
+  margin-bottom: 19px;
+  background: #333;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 19px;
+  width: 100%;
+  background: #333;
+  text-align: center;
+}
+
+charts.gridster li {
+  list-style: none;
+}
+charts.gridster li .board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+}
+charts.gridster li .board .caption {
+  flex: 0 1 28px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 18px;
+  color: #999;
+  background-color: #1e1e1f;
+}
+
+charts.gridster li .board .chart {
+  flex: 1 1 auto;
+  display: flex;
+  position: relative;
+  background-color: #272b30;
+  z-index: 2;
+}
+
+charts.gridster li .board .chart > svg {
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+}
+
+charts.gridster li .board .chart > .rotate {
+  transform-origin: top left;
+  transform: rotate(-90deg) translatex(-100%);
+}
+
+charts.gridster li .board .chart svg text {
+  fill: #c8c8c8;
+}
+charts.gridster li .board .chart-buttons.left {
+  left: 0px;
+  background-color: #1e1e1fa0;
+}
+charts.gridster li .board .chart-buttons.right {
+  right: 0px;
+  background-color: #1e1e1fa0;
+}
+charts.gridster li .board .chart-buttons {
+  position: absolute;
+  background-color: Transparent;
+  z-index: 5;
+  text-align: center;
+  top: 0px;
+  padding: 0px 8px 0px 1px;
+}
+/*
+charts.gridster li .board .chart-buttons:hover {
+   display: block;
+}
+*/
+charts.gridster li .board .chart-buttons > button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding-left: 3px;
+  color: #008080;
+  display: none;
+}
+charts.gridster li .board .chart-buttons button:not([disabled]) > i:hover {
+  cursor: pointer;
+  color: Chocolate;
+}
+charts.gridster li .board .chart-buttons button:disabled {
+  color: #888;
+}
+charts.gridster li .board .loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+  background: url("/imgs/loading.gif") no-repeat center center rgba(0,0,0,0.25);
+}
+charts.gridster li .board .dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+charts.gridster li .board .dropdown-content > .fa {
+  padding: 1px 1px;
+  text-decoration: none;
+  display: block;
+}
+charts.gridster li .board .dropdown-content > .fa:hover {
+  cursor: pointer;
+  color: Chocolate;
+}
+
+charts.gridster {
+  margin: 0;
+  flex: 1;
+  align-self: stretch;
+  padding: 0px 3px 0px 0px /*add right padding to hidden uncessary x sliderbar by .gridhandle*/;
+}
+charts.gridster * {
+  margin: 0;
+  padding: 0;
+}
+charts.gridster .gs-w {
+  cursor: pointer;
+}
+charts.gridster .preview-holder {
+  border: none !important;
+  background: #f00 !important;
+}
+charts.gridster .selected {
+  outline: solid 2px #f00;
+}
+charts.gridster .blink {
+  animation: blink 1s step-end infinite;
+  -webkit-animation: blink 1s step-end infinite;
+}
+charts.gridster ul {
+/*remove the resizing bullet mark*/
+  list-style-type: none;
+}
+/**/
+.context-menu-custom .context-menu-list {
+  overflow: auto;
+  height: 600px;
+}
+
+.color-mapping-panel .color-mapping >row {
+  display: flex;
+}
+.color-mapping-panel .color-mapping .optionset {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.color-mapping-panel .color-mapping .colormap {
+  flex: 1 1 auto;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.color-mapping-panel .color-mapping .colorset,
+.color-mapping-panel .color-mapping .dataset {
+  background-color: #7a8288;
+  color: #fff;
+}
+.color-mapping-panel .color-mapping .colormap-content:empty:before {
+  content: attr(data-text);
+}
+
+.color-mapping-panel .color-mapping .colormap-content {
+  display: inline-table;
+  height: auto;
+  background-color: #272b30;
+  color: #fff;
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  resize: both;
+}
+.color-mapping-panel .color-mapping .colormap-content .color-pad {
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 10px;
+  cursor: pointer;
+}
+.color-mapping-panel .color-mapping .colormap-content .color-pad > i {
+  display: block;
+  margin-left: 1px;
+  margin-right: 2px;
+}
+.color-mapping-panel .color-mapping .colormap-content .color-advanced {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.data-mapping-panel .color,
+.data-mapping-panel .mapper-title {
+  text-align: left;
+}
+.data-mapping-panel .color-title {
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
+  text-shadow: none;
+}
+.data-mapping-panel .show-hide {
+  float: right;
+}
+
+footer .copyright {
+  color: White;
+  font-size: x-small;
+}
+
+footer .copyright td {
+  color: #fff;
+  font-size: x-small;
+}
+footer .copyright a:link {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .copyright a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .copyright a:hover {
+  color: Red;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    font-size: 50%;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .header {
+    font-size: 90%;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .header {
+    font-size: 110%;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .header {
+    font-size: 130%;
+  }
+}
+.header .buttons-container {
+  text-align: left;
+  color: #fff;
+}
+.header .accesses-container {
+  text-align: right;
+  color: #fff;
+}
+
+.header button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.header button:not([disabled]) i:hover,
+.header button:not([disabled]) a:hover {
+  cursor: pointer;
+  color: Chocolate;
+}
+.header button.remotelink {
+  background-color: #ff0;
+}
+.header button:disabled {
+  color: #888;
+}
+
+#login-template {
+  margin-top: 10%;
+  width: 100%;
+  font-size: 14px;
+}
+#login-form {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#login-form-container input {
+  padding: 5px;
+  margin: 5px;
+}
+.text-center {
+  text-align: center;
+}
+
+.management-page {
+  width: 100%;
+  padding-top: 30px;
+}
+.management-page .panel.panel-default {
+  background: #fff;
+  padding: 0px;
+  border: 1px solid #000;
+  height: 700px;
+  overflow: auto;
+}
+.management-page .panel.panel-default .table {
+  border: 1px solid #a9a9a9;
+}
+.management-page .nav-bar {
+  text-align: center;
+}
+.management-page .nav-bar button {
+  width: 300px;
+}
+.management-page .management-view {
+  font-size: 13px;
+  width: 900px;
+  margin: 20px auto;
+}
+.management-page .management-view .management-view-bottom {
+  height: 10px;
+  width: 100%;
+}
+.management-page .management-view table thead {
+  background-color: #999;
+  color: #fff;
+}
+.management-page .management-view table thead th {
+  text-align: center;
+}
+.management-page .management-view table tbody tr {
+  background-color: #999;
+  color: #000;
+  font-weight: bold;
+}
+.management-page .management-view table tbody tr:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+.management-page .management-view table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+.management-page .management-table-active {
+  color: #fff;
+  background-color: #62686d;
+  border-color: #1f99ff;
+}
+.management-page .button-add-user {
+  border-radius: 0px;
+  margin-left: 10px;
+  margin-top: 17px;
+}
+.user-add-dialog,
+.user-add-dialog table {
+  background-color: #999;
+  color: #000;
+}
+.user-add-dialog td:first-child {
+  width: 100px;
+}
+.user-add-dialog .user-add-idandpass {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.user-add-dialog .user-add-idandpass span {
+  width: 100px;
+  display: inline-block;
+}
+.user-add-dialog .btn {
+  width: 100px;
+  border: none;
+}
+.user-add-dialog .btn-container {
+  text-align: center;
+  margin: 10px;
+}
+
+#middle {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+}
+
+#middle > aside {
+  background: #333;
+  flex: 0 1 !important;
+  order: 1;
+  font-size: 25px;
+}
+#middle > contents {
+  display: flex;
+  background: #111;
+  flex: 1 1 auto;
+  order: 5;
+  align-self: stretch;
+  overflow: auto /* sidebar background extendable */;
+}
+#middle > contents.tag {
+  background: #556b2f;
+}
+
+.screenlist {
+  display: flex;
+  height: 100%;
+  flex: 1 1 auto;
+  align-self: stretch;
+  align-content: stretch;
+}
+.screenlist .screens {
+  display: flex;
+  height: 100%;
+  flex: 1 1 auto;
+  align-self: stretch;
+  align-content: stretch;
+}
+.screenlist .splitter {
+  flex: 0 0 auto;
+  width: 18px;
+  background: url("/imgs/vsplitter.jpg") center center no-repeat #535353;
+  min-height: 200px;
+  cursor: col-resize;
+}
+.screenlist .screens::-webkit-scrollbar {
+  display: none;
+}
+.screenlist .screens .imglist {
+  flex: auto;
+  padding: 10px;
+}
+.screenlist .screens .imglist figure {
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 1px;
+}
+.screenlist .screens .imglist figure button {
+  line-height: 12px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1px 1px 1px 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: Transparent;
+  color: #008080;
+  opacity: 0.1;
+}
+.screenlist .screens .imglist figure button:hover {
+  opacity: 1;
+}
+.screenlist .screens .imglist figure img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.screenlist .editor {
+  flex: 0 0 auto;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+}
+.screenlist .editor .head {
+  height: 150px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.screenlist .editor::-webkit-scrollbar {
+  display: none;
+}
+.screenlist .editor .graph-guide {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.screenlist .editor .button-container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.screenlist .editor .graph-container {
+  width: 100%;
+  height: 100%;
+}
+.screenlist .editor .graph-container canvas {
+  display: none;
+}
+
+.aside-container .aside-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 3px 2px;
+}
+.aside-container .aside-button:not([disabled]) i:hover {
+  cursor: pointer;
+  color: Chocolate;
+}
+.aside-container .aside-button:disabled {
+  color: #555;
+}
+
+.tools {
+  background: #111;
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: stretch;
+  align-content: stretch;
+  display: flex;
+  flex-flow: column;
+}
+.tools .caption {
+  flex: 0 1 auto;
+  align-self: strech;
+  text-align: center;
+  background-color: #606060;
+}
+.tools .imglist {
+  flex: auto;
+  padding: 10px;
+}
+.tools .imglist .figure {
+  position: relative;
+  float: left;
+  width: 22%;
+  margin: 1px;
+  border: 3px solid #808080;
+  border-style: "groove";
+  background-color: #333;
+  display: table;
+}
+.tools .imglist .figure .button-container {
+  position: absolute;
+  top: 0;
+  right: 25%;
+}
+.tools .imglist .figure caption {
+  display: table-row;
+}
+.tools .imglist .figure img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: crosshair;
+  padding-left: 30px;
+}
+.tools .imglist .figure button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.tools .imglist .figure button:not([disabled]) i:hover {
+  cursor: pointer;
+  color: Chocolate;
+}
+.tools .imglist .figure button:disabled {
+  color: #555;
+}
+
+.button-add-user {
+  border-radius: 0px;
+  margin-left: 10px;
+  margin-top: 17px;
+}
+.user-add-dialog,
+.user-add-dialog table {
+  background-color: #999;
+  color: #000;
+}
+.user-add-dialog td:first-child {
+  width: 100px;
+}
+.user-add-dialog .user-add-idandpass {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.user-add-dialog .user-add-idandpass span {
+  width: 100px;
+  display: inline-block;
+}
+.user-add-dialog .btn {
+  width: 100px;
+  border: none;
+}
+.user-add-dialog .btn-container {
+  text-align: center;
+  margin: 10px;
+}
+
+.vt-management-page {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.vt-management-page .first-column {
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.vt-management-page .second-column {
+  background-color: #3d3d3d;
+  width: 100px;
+  flex: 2 0;
+  overflow: auto;
+}
+.vt-management-page .second-column .panel {
+  border: none;
+}
+.vt-management-page .second-column .management-vt-view {
+  margin-bottom: 10px;
+}
+.vt-management-page .second-column .close-button {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  width: 22px;
+  height: 19px;
+}
+.vt-management-page .second-column .close-button:hover {
+  background-color: rgba(197,94,94,0.76);
+}
+.vt-management-page .second-column table {
+  border-radius: 0px;
+  background: #e7e7e7;
+  color: #000;
+  border: 1px solid #000;
+}
+.vt-management-page .table {
+  border-radius: 0px;
+  background: #e7e7e7;
+  color: #000;
+  border: 1px solid #000;
+}
+.vt-management-page .table th {
+  background: #c7c7c7;
+  padding: 2px !important;
+}
+.vt-management-page .table th,
+.t-management-page .table td {
+  border: 1px solid #000;
+}
+.vt-management-page .table td {
+  padding: 0px !important;
+}
+.vt-management-page .btn-execute,
+.vt-management-page .btn-save {
+  width: 120px;
+}
+.vt-management-page .vt-list {
+  flex: 3 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 5px solid #999;
+  background: #7a8288;
+}
+.vt-management-page .vt-command-editor {
+  flex: 1 1;
+}
+.vt-management-page .vt-bottom {
+  flex: 1 1;
+}
+.vt-management-page .vt-command-buttons {
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+.vt-management-page .vt-list .panel-body {
+  overflow: auto;
+  padding: 0px;
+  background-color: #d3d3d3;
+  color: #000;
+}
+.vt-management-page .vt {
+  padding: 4px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+  background-color: #d3e6ff;
+}
+.vt-management-page .vt:hover {
+  background-color: #fff;
+}
+.vt-management-page .vt.pressed {
+  background-color: #919191;
+}
+.vt-management-page .vt.selected,
+.vt-management-page .vt.selected:hover {
+  background-color: #fff;
+}
+.vt-management-page .panel-title {
+  text-align: center;
+}
+.vt-management-page .second-column .panel {
+  margin: 0px;
+}
+.vt-management-page .vt-list .panel-heading,
+.vt-management-page .second-column .panel-heading {
+  background-image: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.vt-management-page .sql-command-editor {
+  height: 100%;
+  width: 100%;
+}
+.vt-management-page .sql-error-message {
+  height: 100%;
+  width: 100%;
+  background-color: #bbb;
+}

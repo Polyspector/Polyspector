@@ -1,0 +1,131 @@
+.vt-management-page {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.vt-management-page .first-column {
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.vt-management-page .second-column {
+  background-color: #3D3D3D;
+  width: 100px;
+  flex: 2 0;
+  overflow: auto;
+}
+.vt-management-page .second-column .panel {
+  border: none;
+}
+.vt-management-page .second-column .management-vt-view {
+  margin-bottom: 10px;
+}
+.vt-management-page .second-column .close-button {
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  width: 22px;
+  height: 19px;
+}
+.vt-management-page .second-column .close-button:hover {
+  background-color: rgba(197, 94, 94, 0.76);
+}
+.vt-management-page .second-column table{
+  border-radius: 0px;
+  background: #E7E7E7;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.vt-management-page .table {
+  border-radius: 0px;
+  background: #e7e7e7;
+  color: black;
+  border: 1px solid black;
+}
+.vt-management-page .table th {
+  background: #c7c7c7;
+  padding: 2px !important;
+}
+
+.vt-management-page .table th, .t-management-page .table td {
+  border: 1px solid black;
+}
+.vt-management-page .table td {
+  padding: 0px !important;
+}
+.vt-management-page .btn-execute, .vt-management-page .btn-save {
+  width: 120px;
+}
+.vt-management-page .vt-list {
+  flex: 3 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 5px solid #999;
+  background: #7a8288
+}
+.vt-management-page .vt-command-editor {
+  flex: 1 1;
+}
+
+.vt-management-page .vt-bottom {
+  flex: 1 1;
+}
+
+.vt-management-page .vt-command-buttons {
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+
+.vt-management-page .vt-list .panel-body  {
+  overflow: auto;
+  padding: 0px;
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.vt-management-page .vt  {
+  padding: 4px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+  background-color: #D3E6FF;
+}
+.vt-management-page .vt:hover {
+  background-color: #FFF;
+}
+
+.vt-management-page .vt.pressed {
+  background-color: #919191;
+}
+
+.vt-management-page .vt.selected, .vt-management-page .vt.selected:hover {
+  background-color: #ffffff;
+}
+
+.vt-management-page .panel-title  {
+  text-align: center;
+}
+
+.vt-management-page .second-column .panel {
+  margin: 0px;
+}
+
+.vt-management-page .vt-list .panel-heading, .vt-management-page .second-column .panel-heading {
+  background-image: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.vt-management-page .sql-command-editor {
+  height: 100%;
+  width: 100%;
+}
+
+.vt-management-page .sql-error-message {
+  height: 100%;
+  width: 100%;
+  background-color: #bbb;
+}

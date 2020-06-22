@@ -1,0 +1,51 @@
+<div id="login-template" class="container-fluid">
+	<div class="row clearfix vcenter" id="login-form-container">
+    <div class="col-md-offset-3 col-md-6 well well-lg text-center ">
+      <h1>Login </h1> 
+      <% if (screenid && screenid.length>0) { %><h4> Screen: <%=screenid%> </h4> 
+      <% } else { %> <h4> Screen: -  </h4> <% } %>
+      <% if (dataid && dataid.length>0) { %><h4> Data: <%=dataid%> </h4> 
+      <% } else { %> <h4> Data: -   </h4> <% } %>
+      <div class="height:50px;">
+        <ul id="login-errors" class="parsley-error-list"></ul>
+      </div>
+      
+       <form id="login-form" class="form" data-validate="parsley">          
+         <fieldset>
+           <div class="control-group">
+             <div class="controls">
+                User Name <input type="text" id="login-username-input" name="userId" placeholder="UserId" value="<%= user.id || '' %>"
+                           data-required="true" data-notblank="true">
+                <span class="help-block"></span>
+             </div>
+            </div>
+            <div class="control-group mb20">
+              <div class="controls">
+                Password  <input class="input-medium" type="password" id="login-password-input" placeholder="Password" name="user_password"
+                          value="" data-required="true" data-notblank="true" data-rangelength="[5,25]">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="control-group mb20">
+             <div class="controls">
+                Authentication    <select id="login-authid-input" class="forma" style="color:#333">
+                  <% if (screenid) { %>
+                    <option value='local' selected>LOCAL</option>
+                    <option value='ldap'>LDAP</option>
+                  <% } else { %>
+                    <option value='local' selected>LOCAL</option>
+                    <option value='ldap'>LDAP</option>
+                  <% } %>
+                </select>
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <a href="#" id="login-btn" class="btn btn-primary btn-lg" data-bypass>Login</a>
+          </fieldset>
+      </form>
+      <span class="help-block"></span>
+      <label id='login-error-message' style="overflow:hidden;background:#1c1e22; color: red" readonly>
+      <label>
+    </div>
+	</div>
+</div>

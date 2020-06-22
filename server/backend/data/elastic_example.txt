@@ -1,0 +1,8 @@
+{
+  operable: [
+  {task_id: 1, start: 100, length: 1000},
+  {task_id: 2, start: 5000, length: 2000}
+  ],
+  unoperable: [0,1,1,0,3,2,0,0,0,0,0,1,1,0,3,2,0,0,0,0],
+  overviewRange:[0,10000]
+}

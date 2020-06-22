@@ -1,0 +1,69 @@
+
+path.domain {
+    fill: none;
+    stroke: #c8c8c8;
+}
+
+text#caption{
+    font-size : 20pt;
+}
+
+.linechart-yaxis{
+    float:left;
+}
+.linechart-main{
+    float:left;
+}
+
+.linechart-xaxis-caption{
+}
+
+path.line_chart.hideme{
+    stroke:  #666 !important;
+    opacity: 0.6 !important;
+}
+
+rect.extent{
+    fill: yellow;
+    fill-opacity:0.3;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar
+{
+    overflow:hidden;
+    width:10px;
+    background:#eee;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+}
+::-webkit-scrollbar:horizontal
+{
+    height:10px;
+}
+::-webkit-scrollbar-button
+{
+    display:none;
+}
+::-webkit-scrollbar-piece
+{
+    background:#eee;
+}
+::-webkit-scrollbar-piece:start
+{
+    background:#eee;
+}
+::-webkit-scrollbar-thumb
+{
+    overflow:hidden;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    background:#666;
+}
+::-webkit-scrollbar-corner
+{
+    overflow:hidden;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    background:#666;
+}

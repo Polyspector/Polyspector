@@ -1,0 +1,43 @@
+{
+  "RabbitMQ": {
+    "server": {
+    "host": "rabbitmq",
+    "port": 5672,
+    "user": "guest",
+    "password": "guest"
+    }
+  },
+  "Http": {
+    "server": {
+      "host": "localhost",
+      "port": 8888
+    },
+    "session" :{
+      "sessionSecret": "polyspector",
+      "cookieSecret": "polyspector",
+      "cookieMaxAge": 31536000000
+    },
+    "client": {
+      "path": "client",
+      "mode": "default"
+    }
+  },
+  "FrontEnd": {
+   "database": {
+     "name": "polyspector",
+     "trace": false
+   },
+   "superuser": {
+      "id": "admin",
+      "password": "1234567"
+   }
+  },
+  "ldap": {
+    "server": { 
+      "url": "ldap://133.196.11.176:389",
+      "searchBase": "ou=users, dc=aca02, dc=csl",
+      "searchFilter": "(uid={{username}})"
+    }
+  }
+}
+

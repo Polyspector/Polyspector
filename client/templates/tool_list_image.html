@@ -1,0 +1,17 @@
+<div class=figure>
+  <div class=button-container>
+    <% if (!authority) { %>
+    <button class="event-del" title='削除する'>
+          <i>削除</i>
+      </button>
+    <% } %> 
+    <% if (!authority || authority=='write' ) { %>
+      <button class="event-edit" title='編集する'>
+          <i>編集</i>
+    </button>
+    <% } %> 
+  </div>
+  <caption class='row'><%= id %></caption>
+  <img class='row' src='<%=src%>' title= '<%=title%>' 
+       alt= '<%=alt%>' data-id='<%=id%>' data-format='<%=format%>' />
+</div>

@@ -1,0 +1,35 @@
+<div class="panel panel-default management-user">
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <%for (var key in authorities) {%>
+        <th><%= authorities[key] %></th>
+        <%}%>
+      </tr>
+    </thead>
+    <tbody>
+      <%for (var i = 0; i < users.length; i++) {%>
+      <tr>
+        <td style="width: 150px" class="user-name"><%= users[i].name %></td>
+        <%for (var key in authorities) {%>
+        <td style="text-align: center">
+          <% if (users[i].authorities.indexOf(parseInt(key)) !== -1) {%>
+          <input type="checkbox" checked>
+          <%} else {%>
+          <input type="checkbox">
+          <%}%>
+        </td>
+        <%}%>
+      </tr>
+      <%}%>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-sm btn-default button-add-user">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  </button>
+  <div class="add-user-dialog"></div>
+  <div class="management-view-bottom"></div>
+
+</div>

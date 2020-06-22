@@ -1,0 +1,80 @@
+
+.breadcrumb-dialog.modal {
+    top:0; 
+    bottom:5%; 
+}
+
+@media screen {
+    .breadcrumb-dialog .modal-dialog {
+        width: 50%;
+        height:50%;
+    }
+}
+
+.breadcrumb-dialog .modal-dialog .modal-content {
+  height:100%;
+}
+
+.breadcrumb-dialog .modal-dialog .modal-content .modal-header {
+  padding: 3px; 
+}
+
+.breadcrumb-dialog .modal-dialog .modal-content .modal-body {
+  padding: 3px;
+  max-height:100%; 
+  height:100%;
+}
+.breadcrumb-dialog .modal-dialog .modal-content .bootstrap-dialog-body
+{
+  height:100%;
+}
+.breadcrumb-dialog .modal-dialog .modal-content .bootstrap-dialog-message
+{
+  height:100%;
+}
+.breadcrumb-dialog .modal-dialog .modal-content .breadcrumb-container
+{
+  height:100%;
+}
+
+.breadcrumb-dialog .node rect {
+  stroke: #999;
+  fill: #fff;
+  stroke-width: 1.5px;
+}
+
+.breadcrumb-dialog .node g foreignobject {
+  fill: #239DDB; 
+  font-size: 8px;
+  color: lightgray;
+  text-align: center;
+}
+
+.breadcrumb-dialog .node g div.active {
+   border: solid 1px #f00;
+   cursor: pointer;
+}
+
+.breadcrumb-dialog .node g div.inactive {
+  cursor: pointer;   
+}
+
+
+.breadcrumb-dialog .node g div img {
+  fill: #239DDB;
+  width: 48px;
+  height: 48px;
+}
+
+.breadcrumb-dialog .nodeclass {
+    font-size: 9px;
+}
+
+.breadcrumb-dialog .edgeclass {
+    font-size: 9px;
+}
+
+.breadcrumb-dialog .edgePath path {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}

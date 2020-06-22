@@ -1,0 +1,57 @@
+
+
+path.domain {
+    fill: none;
+    stroke: #c8c8c8;
+}
+
+text#caption{
+    font-size : 20pt;
+}
+
+.scatterplot-yaxis{
+    float:left;
+}
+.scatterplot-main{
+    float:left;
+}
+
+.scatterplot .axis line {
+  stroke: #555;
+  stroke-dasharray: 1 5;
+  opacity: 0.3;
+}
+
+.scatterplot .frame {
+  fill: none;
+  stroke: none;
+}
+
+.scatterplot circle {
+    fill-opacity: .6 !important;
+}
+
+.scatterplot circle.hideme {
+  fill: #666 !important;
+  fill-opacity: .6 !important;
+}
+
+.scatterplot .extent {
+    fill: yellow;
+    fill-opacity:0.3;
+}
+
+.scatterplot .cell rect.background {
+  fill: none;
+  fill-opacity: .9;
+}
+
+.scatterplot .y.axis line {
+  stroke: #ddd;
+   stroke-width: 1px;
+}
+
+.scatterplot .x.axis line {
+  stroke: #ddd;
+   stroke-width: 1px;
+}

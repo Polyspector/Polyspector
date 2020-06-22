@@ -1,0 +1,49 @@
+<div class='signupPanel'>
+  <div id="login-template" class="container-fluid">
+	  <div class="row clearfix" id="login-form-container">
+        <div class="col-md-offset-3 col-md-6 well well-lg text-center">
+            <!--h1>Signup</h1-->
+            <div class="height:50px;">
+                <ul id="signup-errors" class="parsley-error-list"></ul>
+            </div>
+            <form id="signup-form" class="form" data-validate="parsley">
+                <fieldset>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" id="signup-username-input" name="username"
+                                   placeholder="Username" value="<%= user.id || '' %>"
+                                data-required="true" data-notblank="true">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                      <div class="controls">
+                        <input class="input-medium" type="password" 
+                        id="signup-password-input" placeholder="Password" name="user_password" 
+                        value="" data-required="true" data-notblank="true" data-rangelength="[5,25]">
+                          <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="control-group mb20">
+                      <div class="controls">
+                        <input class="input-medium" type="password" id="signup-password-confirm-input"
+                           placeholder="Confirm Password" name="user_password" 
+                            value="" data-required="true" data-notblank="true" 
+                           data-rangelength="[5,25]" data-equalto="#signup-password-input">
+                        <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <select id="signup-actor" placeholder="Select an actor"
+                               data-required="true" data-notblank="true" >
+                          <option value="Operator">Operator</option>
+                          <option value="Designer">Designer</option>
+                          <option value="Manager">Manager</option>
+                    </select>
+                    <a href="#" id="signup-btn" class="btn btn-primary btn-lg" data-bypass>Signup</a>
+                </fieldset>
+            </form>
+        </div>
+	  </div>
+    <font size="5" color="#ff0000"><p id="signup-alert" style='text-align:center'></p></font>
+  </div>
+</div>

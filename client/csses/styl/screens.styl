@@ -1,0 +1,107 @@
+
+.screenlist {
+  display: flex;   
+  height: 100%;
+  flex: 1 1 auto;
+  align-self: stretch;
+  align-content: stretch;
+}
+
+//on the left side
+.screenlist .screens {
+  display: flex;
+  height: 100%;
+  flex: 1 1 auto;
+  align-self: stretch;
+  align-content: stretch;
+}
+
+.screenlist .splitter {
+  flex: 0 0 auto;
+  width: 18px;  
+  background: url("/imgs/vsplitter.jpg") center center no-repeat #535353;
+  min-height: 200px; 
+  cursor: col-resize;  
+}
+
+.screenlist .screens::-webkit-scrollbar {
+  display: none;
+}
+
+.screenlist .screens .imglist {
+  flex: auto;
+  padding:10px;
+}
+
+.screenlist .screens .imglist figure {
+  display: block;
+	float: left;
+  width: 25%;
+	padding: 1px;
+} 
+
+.screenlist .screens .imglist figure button {
+     line-height: 12px;
+     text-align: center;
+     font-weight bold;
+     padding: 1px 1px 1px 1px; 
+     position: absolute;
+     top:0;
+     right:0;
+     background-color: Transparent;
+     color  #008080
+     opacity: 0.1;
+}
+
+.screenlist .screens .imglist figure button:hover {
+   opacity: 1;
+}
+
+.screenlist .screens .imglist figure img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+//on the right side
+.screenlist .editor {
+  flex: 0 0 auto;
+  top: 0
+  left: 0
+  width: 30%;
+  height: 100%;
+}
+
+.screenlist .editor .head {
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.screenlist .editor::-webkit-scrollbar {
+  display: none; 
+}
+
+.screenlist .editor .graph-guide { 
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.screenlist .editor .button-container { 
+  overflow:hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.screenlist .editor .graph-container {
+  width: 100%;
+  height: 100%;
+  //padding: 150px 0 0;
+}
+
+.screenlist .editor .graph-container canvas {
+  display: none;
+}
+

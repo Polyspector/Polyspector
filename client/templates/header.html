@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row header">
+    <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10 buttons-container">
+    <% if(logged_in){ %>
+      <button class="event-home" title='ホーム・スクリーンに戻る'>
+        <i class="fa fa-home ic-header-button" ></i>
+      </button>
+      <button class="event-data-selection" title='データを選択する'>
+        <i class="fa fa-list ic-header-button" ></i>
+      </button>
+      <button class="event-tool-editor" title='スクリーン・リストを表示する'>
+        <i class="fa fa-table ic-header-button" ></i>
+      </button>
+      <button class="event-screen">
+        <i class='fa ic-header-button'><a href='' title=''>SCREEN</a></i>
+      </button>
+      <button class="event-datalist">
+        <i class='fa ic-header-button' title=''></i>
+      </button>
+    <% } %>
+    </div>
+    <div class='col-md-2 col-lg-2 col-sm-2  col-xs-2 accesses-container'>
+    <% if(logged_in){ %>
+      <span style="color: #0066CC"><%= user.id %></span>
+      <!--text>access: <%= count %></text-->
+      <button class="event-signout" title='Click to Logout'>
+      <i class="fa fa-sign-out ic-header-button" ></i>
+      </button>
+    <% } else { %>
+      <!--i class="fa fa-user-plus ic-header-button"></i-->
+    <% } %>
+    <button class="event-help">
+      <i class='fa fa-question' title='ヘルプ'></i>
+    </button>
+  </div>
+</div>
+<div class="clearfix"></div>

@@ -1,0 +1,65 @@
+
+path.domain {
+    fill: none;
+    stroke: #c8c8c8;
+}
+
+text#barchart-caption{
+    font-size : 20pt;
+}
+
+.barchart-yaxis{
+    float:left;
+}
+.barchart-main{
+    float:left;
+}
+text.x.axis.zero{
+    opacity: 0.7;
+}
+
+rect.rect_barchart.hideme{
+    fill:  #666 !important;
+    opacity: 0.6 !important;
+}
+
+
+/*Scroll Bar*/
+::-webkit-scrollbar
+{
+    overflow:hidden;
+    width:10px;
+    background:#eee;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+}
+::-webkit-scrollbar:horizontal
+{
+    height:10px;
+}
+::-webkit-scrollbar-button
+{
+    display:none;
+}
+::-webkit-scrollbar-piece
+{
+    background:#eee;
+}
+::-webkit-scrollbar-piece:start
+{
+    background:#eee;
+}
+::-webkit-scrollbar-thumb
+{
+    overflow:hidden;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    background:#666;
+}
+::-webkit-scrollbar-corner
+{
+    overflow:hidden;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    background:#666;
+}

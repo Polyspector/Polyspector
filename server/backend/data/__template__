@@ -1,0 +1,12 @@
+{
+  "subfolder":"*",
+   "normal" : [
+      "SPS_Test.tsv",
+      "flattern_SPS_Test.tsv",
+      "errorTypes.csv",
+      "wafermap.csv"
+],
+"big": [
+"big_line_chart.csv"
+]
+}

@@ -1,0 +1,27 @@
+
+#middle
+  flex 1
+  justify-content flex-start
+  align-items stretch
+  align-content stretch
+  display flex //for subelement
+  flex-flow row //for sub element
+  height 100%
+
+#middle > aside {
+  background #333;
+  flex 0 1 !important;
+  order 1;
+  font-size 25px
+}
+
+#middle > contents
+  display flex
+  background #111
+  flex 1 1 auto
+  order 5
+  align-self stretch
+  overflow auto /* sidebar background extendable */
+
+#middle > contents.tag
+  background darkolivegreen

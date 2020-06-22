@@ -1,0 +1,68 @@
+
+svg.grpaheditor defs .marker {
+    fill: red;
+}
+
+svg.grpaheditor .graph .conceptG text{
+    pointer-events: none;
+}
+
+svg.grpaheditor .graph g.conceptG rect{
+    fill: #F6FBFF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+svg.grpaheditor .graph g.conceptG:hover rect{
+    fill: rgb(200, 238, 241);
+}
+
+svg.grpaheditor .graph g.selected rect{
+    fill: rgb(60, 178, 121);
+}
+svg.grpaheditor .graph g.selected:hover rect{
+    fill: rgb(51, 234, 210);
+}
+
+svg.grpaheditor .graph path.link {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+    cursor: default;
+}
+
+svg.grpaheditor .graph path.link:hover{
+    stroke: rgb(94, 196, 204);
+}
+
+svg.grpaheditor .graph g.connect-node rect{
+    fill: #BEFFFF;
+}
+
+svg.grpaheditor .graph path.link.hidden{
+    stroke-width: 0;
+}
+
+svg.grpaheditor .graph path.link.selected {
+    stroke: rgb(229, 172, 247);
+}
+
+svg.grpaheditor .graph .graph-export-button {
+    min-width: 100px;
+}
+
+svg.grpaheditor .graph .snapshot-graph-guide p {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+svg.grpaheditor .graph .conceptG text {
+    font-size: 20px;
+    fill: blue;
+}
+
+svg.grpaheditor .graph tspan.path-label{
+    font-size: 14px;
+    fill: white;
+}

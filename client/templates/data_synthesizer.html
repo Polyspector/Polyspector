@@ -1,0 +1,32 @@
+<div class="vt-management-page">
+  <div class="first-column">
+    <div class="vt-list">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">VT list</h3>
+        </div>
+        <div class="panel-body">
+          <% vtlist.forEach(function(wvtname) { %>
+          <div class="vt" list-wvtname="<%=wvtname%>" draggable="true">
+            <%=wvtname%>
+          </div>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    <div class="vt-command-editor">
+      <textarea class="sql-command-editor"/>
+    </div>
+    <div class="vt-command-buttons">
+      <a class="btn btn-success btn-execute">Test</a>
+      <a class="btn btn-success btn-save">Save</a>
+      <a> as: <input type="text" id="new-vt-name" value=""></a>
+    </div>
+    <div class="vt-bottom">
+      <textarea readonly class="sql-error-message">
+      </textarea>
+    </div>
+  </div>
+  <div class="second-column">
+  </div>
+</div>

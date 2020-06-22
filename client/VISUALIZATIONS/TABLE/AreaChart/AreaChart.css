@@ -1,0 +1,130 @@
+/* base */
+.areachart .area {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.areachart .legend {
+  fill: graytext;
+}
+
+.areachart path.area_chart {
+  fill: none;
+  width: 1px;
+}
+
+.areachart rect.extent {
+  fill-opacity: 0.2;
+  stroke-opacity: 0.2;
+  fill: blue;
+}
+
+.areachart-yaxis{
+    float:left;
+}
+
+.areachart-main{
+    float:left;
+}
+
+.areachart-xaxis{
+    float:left;
+}
+
+
+.areachart .axis path{
+  stroke: #aaa;
+}
+
+.areachart .domain {
+  fill: none; 
+  stroke: black; 
+  stroke-width: 1;
+}
+
+/* layout */
+.areachart #legend_area_chart {
+  background-color: white;
+    float: left;
+    height: 125px;
+    position: absolute;
+    right: 19%;
+    top: 30px;
+    width: 88px;
+}
+
+.areachart #multi_series_area_chart {
+  color: black;
+    float: right;
+    margin-top: 160px;
+    position: absolute;
+    right: 30%;
+
+}
+
+.areachart .area_above {
+  fill: rgb(252,141,89);
+  /*fill: #17FFF7;*/
+}
+
+.areachart .area_below {
+  fill: rgb(145,207,96);
+}
+
+.areachart #circleTooltip {
+  fill: none;
+    stroke: none;
+    pointer-events: all;
+}
+
+.areachart #control_area_chart {
+  float: right;
+    height: 80px;
+    overflow: auto;
+    position: absolute;
+    right: 31%;
+    top: 165px;
+    width: 78px;
+    color: black;
+}
+
+.areachart #control_panel_area_chart {
+  background-color: whitesmoke;
+    border: 1px none gray;
+    box-shadow: 0 3px 3px 2px #888;
+    color: gray;
+    height: 334px;
+    left: -12%;
+    margin-top: 65px;
+    position: absolute;
+    top: 115px;
+    width: 135px;
+}
+
+.areachart #change_color_area_chart {
+  float: left;
+    position: absolute;
+    top: 215px;
+    width: 76px;
+}
+
+.areachart #pick_color_area_chart {
+  left: 80px;
+    position: absolute;
+    top: 215px;
+    width: 43px;
+}
+
+.areachart .rect_area_chart {
+  fill-opacity: 1;
+}
+
+.areachart #slider_area_chart {
+  position: relative;
+    top: 250px;
+}
+
+.areachart .hideme{
+    fill:  #666 !important;
+    opacity: 0.6 !important;
+}

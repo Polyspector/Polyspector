@@ -1,0 +1,35 @@
+charts.gridster
+    margin 0
+    flex 1
+    align-self stretch
+    padding 0px 3px 0px 0px /*add right padding to hidden uncessary x sliderbar by .gridhandle*/
+
+charts.gridster *
+  margin 0;
+  padding 0;
+
+charts.gridster .gs-w
+  cursor pointer
+
+charts.gridster .preview-holder
+    border none!important
+    background red!important
+
+charts.gridster .selected {
+  outline: solid 2px #f00
+}
+
+charts.gridster .blink {
+  animation: blink 1s step-end infinite;
+  -webkit-animation: blink 1s step-end infinite;
+}
+
+charts.gridster ul { /*remove the resizing bullet mark*/
+  list-style-type: none;
+}
+
+/**/
+.context-menu-custom .context-menu-list {
+  overflow: auto;
+  height: 600px;
+}

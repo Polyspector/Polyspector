@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) { 
+    .header {
+        font-size 50%;
+       
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .header {
+        font-size 90%;
+     }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .header {
+        font-size 110%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .header {
+        font-size 130%;
+    }
+}
+
+.header .buttons-container {
+   text-align: left;
+   color: white;
+}
+
+.header .accesses-container {
+   text-align: right;
+   color: white;
+}
+
+.header button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-left: 10px;
+    margin-top: 3px
+}
+
+.header button:not([disabled]) i:hover, .header button:not([disabled]) a:hover {
+    cursor pointer
+    color Chocolate
+}
+
+.header button.remotelink {
+    background-color: yellow
+}
+
+.header button:disabled {
+    color: #888
+}

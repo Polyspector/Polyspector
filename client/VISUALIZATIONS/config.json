@@ -1,0 +1,36 @@
+{
+  "TABLE": [
+    {
+      "type": "AreaChart",
+      "path": "TABLE/AreaChart"
+    },
+    {
+      "type": "BarChart",
+      "path": "TABLE/BarChart"
+    },
+    {
+      "type": "HeatMap",
+      "path": "TABLE/HeatMap"
+    },
+    {
+      "type": "LineChart",
+      "path": "TABLE/LineChart"
+    },
+    {
+      "type": "PieChart",
+      "path": "TABLE/PieChart"
+    },
+    {
+      "type": "ScatterMatrixChart",
+      "path": "TABLE/ScatterMatrixChart"
+    },
+    {
+      "type": "ScatterPlot",
+      "path": "TABLE/ScatterPlot"
+    }
+  ],
+  "__NONE__": {
+    "type": "__NONE__",
+    "path": "__NONE__"
+  }
+}

@@ -1,0 +1,69 @@
+.tools {
+  background: #111;
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: stretch;
+  align-content: stretch;
+  display: flex;
+  flex-flow column
+}
+
+.tools .caption {
+  flex 0 1 auto;
+  align-self: strech;
+  text-align: center;
+  background-color: #606060
+}
+
+.tools .imglist {
+  flex: auto;
+  padding:10px;
+}
+
+.tools .imglist .figure {
+  position: relative;//to position button container
+  float: left;
+  width: 22%;
+  margin: 1px;
+  border: 3px solid grey;
+  border-style: "groove";
+  background-color: #333;
+  display: table;
+}
+
+.tools .imglist .figure .button-container {
+  position: absolute;
+  top: 0;
+	right:25%;
+}
+
+.tools .imglist .figure caption  {
+  display: table-row;
+}
+
+.tools .imglist .figure img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: crosshair;
+  padding-left: 30px;//.row have left:-15px right:-15px
+}
+
+.tools .imglist .figure button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  } 
+  
+.tools .imglist .figure button:not([disabled]) i:hover {
+    cursor pointer
+    color Chocolate
+  }
+
+.tools .imglist .figure button:disabled {
+    color: #555
+}

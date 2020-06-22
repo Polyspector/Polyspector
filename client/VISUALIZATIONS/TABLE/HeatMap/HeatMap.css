@@ -1,0 +1,44 @@
+/* base */
+.heatmap .domain {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.heatmap rect {
+	opacity: 1;
+	stroke: #444444;
+	stroke-width: 0.3;
+}
+
+.heatmap .axis path {
+  stroke: #aaa;
+}
+.heatmap .axis text {
+  /* font-size: 10px; */
+}
+
+/* not used */
+.heatmap .line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.heatmap .legend {
+  fill: graytext;
+}
+.heatmap rect.extent {
+  fill-opacity: 0.3;
+  stroke-opacity: 0.3;
+  fill: #bcbd22;
+}
+
+/* layout */
+.heatmap .area_above {
+  fill: rgb(252,141,89);
+  /*fill: #17FFF7;*/
+}
+
+.heatmap .area_below {
+  fill: rgb(145,207,96);
+}

@@ -1,0 +1,68 @@
+<div id="screen-setup-dlg" class="container">
+  <%if(kind_of_dlg!==10){%><label>Please input a unique id: </label>
+  <input type="text" name="name" class="forma" value=<%=id%>><%}%>
+  <label>Please input screen width: </label>
+  <input type="text" name="width" class="forma" value='' placeholder="default width" >
+  <label>Please input screen height: </label>
+  <input type="text" name="height" class="forma" value='' placeholder="default height" >
+  <label>Please select maximum columns: </label>
+  <select name="maxColumns" class="forma" style="color:#333">
+        <option value=2 selected>2 columns</option>
+        <option value=3 > 3 columns</option>
+        <option value=4>4 columns</option>
+        <option value=5>5 columns</option>
+        <option value=6>6 columns</option>
+        <option value=7>7 columns</option>
+        <option value=10>10 columns</option>
+        <option value=20>20 columns</option>
+        <option value=30>30 columns</option>
+        <option value=50>50 columns</option>
+        <option value=100>100 columns</option>
+  </select>
+  <label>Please select maximum rows: </label>
+  <select name="maxRows" class="forma" style="color:#333">
+        <option value=2> 2 rows</option>
+        <option value=3> 3 rows</option>
+        <option value=4> 4 rows</option>
+        <option value=5 selected>5 rows</option>
+        <option value=15> 15 rows</option>
+        <option value=20> 20 rows</option>
+        <option value=30> 30 rows</option>
+        <option value=40> 40 rows</option>
+        <option value=50> 50 rows</option>
+  </select>
+  <label>Please select margin between charts: </label>
+  <select name="margin" class="forma" style="color:#333">
+        <option value=2>2 pixels</option>
+        <option value=3>3 pixels</option>
+        <option value=4>4 pixels</option>
+        <option value=5 selected>5 pixels</option>
+        <option value=6>6 pixels</option>
+  </select>
+  <label>Please select timout MAXIMUM to get each virtual dataset: </label>
+  <select name="timeout" class="forma" style="color:#333">
+        <option value=0 selected>設定なし</option>
+        <option value=3000>3秒</option>
+        <option value=10000>10秒</option>
+        <option value=50000>50秒</option>
+        <option value=600000>1分</option>
+        <option value=300000>5分</option>
+        <option value=3600000>１時間</option>
+  </select>
+  <label>Please select periodic INTERVAL to refresh: </label>
+  <select name="interval" class="forma" style="color:#333">
+       <option value=0 selected>設定なし</option>
+       <option value=1000>1秒</option>
+       <option value=3000>3秒</option>
+       <option value=10000>10秒</option>
+       <option value=60000>1分</option>
+       <option value=600000>１0分</option>
+       <option value=3600000>1時間</option>
+       <option value=36000000>10時間</option>
+       <option value=86400000>1日</option>
+  </select>
+  <label>Memo: </label>
+  <textarea name="description" style="resize:none" rows="3" cols="50" class="forma" value="" />
+  <label id='errorMessage' style="display:block; text-align: center; color: red;"></label>
+
+</div>

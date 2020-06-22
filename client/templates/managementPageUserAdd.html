@@ -1,0 +1,43 @@
+<div class="panel panel-default user-add-dialog">
+  <table class="table non-bordered">
+    <tbody>
+      <tr>
+        <td>Name: </td>
+        <td><input type="text" style="width: 100%"></td>
+      </tr>
+      <tr>
+        <td>
+          <p>User</p>
+          <input type="radio" name="clarify">
+        </td>
+        <td>
+          <div class="user-add-idandpass">
+            <div>
+              <span>id </span><input type="text">
+            </div>
+            <div>
+              <span>password </span><input type="text">
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Group</p>
+          <input type="radio" name="clarify">
+        </td>
+        <td>
+          <p>select user to add</p>
+          <% for (var i = 0; i < users.length; i++) {%>
+            <label class="checkbox-inline"><input type="checkbox" value=""><%= users[i].name %></label>
+          <%}%>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="btn-container">
+    <button type="button" class="btn btn-success">Ok</button>
+    <button type="button" class="btn btn-danger">Cancel</button>
+  </div>
+</div>
+

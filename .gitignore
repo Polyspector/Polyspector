@@ -1,0 +1,11 @@
+server/logs/*
+server/backend/sqlite/VirtualTable/*
+server/backend/sqlite/data/*
+server/db/*.db
+server/db/*.db
+server/db/mongo/*
+
+config/default.json
+config/development.json
+!.gitkeep
+/server/backend/data/folder1/XY_cols_valid_le24NaN.NaN.csv

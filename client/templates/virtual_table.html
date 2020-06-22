@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= wvtid %>
+        <span style="white-space: nowrap;color:#777">&nbsp;&nbsp;&nbsp;&nbsp;<%=wvtname%></span>
+        <i class="fa fa-times close-button"></i>
+      </h3>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <%for (var i = 0; i < columns.length; i++) {%>
+        <th><%= columns[i] %></th>
+        <%}%>
+      </tr>
+    </thead>
+    <tbody>
+      <%for (var i = 0; (i < table.length) && ((limit == undefined)? true: (i < limit)); i++) {%>
+      <tr>
+        <%for (var j = 0; j < columns.length; j++) {%>
+        <td><%= table[i][columns[j]] %></td>
+        <%}%>
+      </tr>
+      <%}%>
+    </tbody>
+  </table>
+</div>

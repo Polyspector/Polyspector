@@ -1,0 +1,30 @@
+{
+  "name": "bower_test",
+  "authors": [
+    ""
+  ],
+  "description": "",
+  "main": "",
+  "license": "Apache",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone.memento": "https://raw.githubusercontent.com/mxriverlynn/backbone.memento/master/backbone.memento.js",
+    "underscore": "1.8.3",
+    "rgbcolor": "https://www.phpied.com/files/rgbcolor/rgbcolor.js",
+    "stackBlur": "https://raw.githubusercontent.com/canvg/canvg/v1.3/StackBlur.js",
+    "html2canvas": "https://raw.githubusercontent.com/niklasvh/html2canvas/0.4.1/build/html2canvas.js",
+    "canvg": "https://raw.githubusercontent.com/canvg/canvg/v1.3/canvg.js",
+    "bootswatch": "https://bootswatch.com/3/slate/bootstrap.min.css",
+    "bootstrap.vertical-tabs": "https://raw.githubusercontent.com/dbtek/bootstrap-vertical-tabs/1.2.1/bootstrap.vertical-tabs.css",
+    "requirejs": "https://raw.githubusercontent.com/requirejs/requirejs/2.3.2/require.js",
+    "jquery-ui": "https://jqueryui.com/resources/download/jquery-ui-1.12.1.zip",
+    "require-css": "^0.1.10"
+  }
+}

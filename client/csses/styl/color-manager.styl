@@ -1,0 +1,55 @@
+
+.color-mapping-panel .color-mapping >row {
+  display: flex;
+}
+
+.color-mapping-panel .color-mapping .optionset {
+  padding-left: 3px;
+  padding-right: 3px;  
+}
+ 
+.color-mapping-panel .color-mapping .colormap {
+  flex: 1 1 auto;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.color-mapping-panel .color-mapping .colorset, .color-mapping-panel .color-mapping .dataset {
+  background-color: #7a8288;
+  color: #fff;
+}
+
+.color-mapping-panel .color-mapping .colormap-content:empty:before {
+  content:attr(data-text);
+}
+
+.color-mapping-panel .color-mapping .colormap-content {
+  display: inline-table;
+  height: auto;
+  background-color: #272b30;
+  color: #fff;
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  resize: both;
+}
+
+.color-mapping-panel .color-mapping .colormap-content .color-pad{
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 10px;
+  cursor: pointer;
+  /*text-align: center;*/
+}
+
+.color-mapping-panel .color-mapping .colormap-content .color-pad > i {
+  display: block;
+  margin-left: 1px;
+  margin-right: 2px;
+}
+
+.color-mapping-panel .color-mapping .colormap-content .color-advanced {
+  display: inline-block;
+  cursor: pointer;
+}

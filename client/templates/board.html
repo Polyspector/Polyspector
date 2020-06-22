@@ -1,0 +1,65 @@
+<div class='caption' title="DOUBLE-CLICK to edit title">
+
+  <div class ='name' style="display: inline-block;">HEADER</div> <!-- show title    -->
+  
+  <div class ="chart-buttons left" title = 'select charts to link'>
+    <select multiple="multiple" style="display: none;"></select>
+  </div>
+
+  <div class="chart-buttons right">
+    <button class="aside-button event-chart-undo"  title='Undo' disabled>
+      <i class="fa fa-undo"></i>
+    </button>
+    <button class="aside-button event-chart-redo"  title='Redo' disabled>
+        <i class="fa fa-repeat"></i>
+    </button>
+    <button class ='event-zoom' title='ズームアウト/ズームイン'>
+      <i class="fa fa-expand"></i>
+    </button>
+    <button class ='event-clear-filter' title='絞込み条件クリア'>
+      <i class="fa fa-eraser fa-rotate-90"></i>
+    </button>
+    <button class ='event-design-panel' title='デザイン操作パネル'>
+      <i class="fa fa-puzzle-piece"></i>
+    </button>
+    <button class ='event-color-map' title='カラーマッピング操作パネル'>
+      <i class="fa fa-paint-brush"></i>
+    </button>
+    <button class ='event-link-panel' title='データ絞込み操作パネル'>
+      <i class="fa fa-sliders"></i>
+    </button>
+    <button class ='event-data-mapping-panel' title='データマッピング操作パネル'>
+      <i class="fa fa-line-chart"></i>
+    </button>
+    
+    <button class ='event-toggle-mode' title='表示モード切替'>
+      <div class="fa fa-sun-o switchme">
+        <div class="dropdown-content">
+          <div class="fa fa-arrows event-fullrange" title='フルレンジモード'></div>
+          <div class="fa fa-filter event-drilldown" title='ドリルダウンモード'></div>
+          <div class="fa fa fa-sun-o event-highlight" title='ハイライトモード'></div>
+        </div>
+      </div>
+    </button>
+    <button class ='event-others' title='その他'>
+      <div class="fa fa-ellipsis-h">
+        <div class="dropdown-content">
+          <div class="fa fa-spinner event-analysis" title='データ分析設定'></div>
+          <div class="fa fa-download event-download" title='データダウンロード'></div>
+          <div class="fa fa-picture-o event-image" title='スナップショット'></div>
+          <div class="fa fa-clock-o event-timer" title='タイマーを設定する'></div>
+          <div class="fa fa-close event-delete" title='チャート削除'></div>
+        </div>
+      </div>
+    </button>
+    <button class ='event-board-help' title='ヘルプ'>
+      <i class="fa fa-question"></i>
+    </button>
+    <i class='trigger'><<</i>
+  </div>
+</div>
+
+<div class='chart' style="overflow-x: auto"></div> <!-- chart   -->
+<div class='loading'></div> <!-- icon  -->
+<div class='alerting'></div><!-- not used? -->
+<ul class='chart-menu'></ul><!-- not used? -->

@@ -1,0 +1,12 @@
+{
+ "FrontEnd": {
+   "database": {
+     "name": "production",
+     "trace": false
+   },
+   "superuser": {
+      "id": "admin",
+      "password": "1234567"
+   }
+  }
+}

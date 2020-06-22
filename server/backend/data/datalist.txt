@@ -1,0 +1,17 @@
+{
+"chart": {
+  "type": "BarChart",
+  "data": "vt1"},
+
+"list": [
+  {"id": "data1", "format": "0ax345"},
+  {"id": "data2", "format": "0ax345"},
+  {"id": "data3", "format": "0ax345"},
+  {"id": "data4", "format": "0ax348"},
+  {"id": "data4", "format": "0ax348"},
+  {"id": "data6", "format": "0ax345"},
+  {"id": "data5", "format": "0ax348"},
+  {"id": "data7", "format": "0ax348"},
+  {"id": "data8", "format": "0ax348"},
+  {"id": "data9", "format": "0ax348"} ]
+}

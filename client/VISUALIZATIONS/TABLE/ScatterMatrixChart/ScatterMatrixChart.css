@@ -1,0 +1,108 @@
+
+.scattermatrixchart svg {
+  font: 10px sans-serif;
+  padding: 10px;
+}
+
+.scattermatrixchart .axis,
+.scattermatrixchart .cellframe {
+  shape-rendering: geometricPrecision;
+}
+
+.scattermatrixchart .axis line {
+  stroke: #555;
+  stroke-dasharray: 1 5;
+  opacity: 0.3;
+}
+
+.scattermatrixchart .axis path {
+  display: none;
+}
+
+.scattermatrixchart .cellframe {
+  fill: none;
+  stroke: #ddd;
+  opacity: 0.3
+}
+
+.scattermatrixchart circle.hideme {
+  fill: #666 !important;
+  fill-opacity: .6 !important;
+}
+
+.scattermatrixchart .extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+.scattermatrixchart .cell rect.background {
+  fill: none;
+  fill-opacity: .9;
+}
+
+.scattermatrixchart .y.axis line {
+  stroke: #ddd;
+   stroke-width: 1px;
+}
+
+.scattermatrixchart .x.axis line {
+  stroke: #ddd;
+   stroke-width: 1px;
+}
+
+.scattermatrixchart #control_scatter_matrix_chart {
+  float: right;
+    height: 80px;
+    overflow: auto;
+    position: absolute;
+    right: 31%;
+    top: 165px;
+    width: 78px;
+    color: black;
+}
+
+.scattermatrixchart #change_axis_scatter_matrix_chart {
+  color: black;
+    float: right;
+    margin-top: 225px;
+    position: absolute;
+    right: 30%;
+
+}
+
+.scattermatrixchart .rect_scatter_matrix_chart {
+  fill-opacity: 1;
+}
+
+.scattermatrixchart #control_panel_scatter_matrix_chart {
+  background-color: whitesmoke;
+    border: 1px none gray;
+    box-shadow: 0 3px 3px 2px #888;
+    color: gray;
+    height: 334px;
+    left: -12%;
+    margin-top: 65px;
+    position: absolute;
+    top: 115px;
+    width: 135px;
+}
+
+.scattermatrixchart #change_color_scatter_matrix_chart {
+  float: left;
+    position: absolute;
+    top: 275px;
+    width: 76px;
+}
+
+.scattermatrixchart #pick_color_scatter_matrix_chart {
+  left: 80px;
+    position: absolute;
+    top: 273px;
+    width: 43px;
+}
+/* module */
+
+/* state */
+
+/* theme */
