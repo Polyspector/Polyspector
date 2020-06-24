@@ -65,20 +65,7 @@ SELINUX=disabled
  node  server/backend/worker_csvtsv/main.js
  // Please Set Data at server/backend/worker_csvtsv/data/hoge.csv
 ```
-## Boot application-based platform
-``` 
- PORT=8888 node start start/start.js
- //application datalist
- NODE_PATH=./node_modules VISPLA_PATH=$(pwd) node $application_folder/boot_datalist.js 
- //application workers
- NODE_PATH=./node_modules VISPLA_PATH=$(pwd) node $application_folder/boot_virtualtable.js 
 
- //for PM2
- PORT=8888 DB=fplus pm2 start server/start.js
- VISPLA_PATH=$(pwd) pm2 start ../fplus/workers/boot_datalist.js
- VISPLA_PATH=$(pwd) pm2 start ../fplus/workers/boot_virtualtable.js
-
-```
 ## Access
   Please access http://IP_ADDRESS:PORT Using Google Chrome.
   USER:: admin
